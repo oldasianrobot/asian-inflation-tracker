@@ -4,6 +4,7 @@ import rawData from './data.json';
 import { AreaChart, Area, ResponsiveContainer, YAxis, Tooltip, LineChart, Line, CartesianGrid, XAxis, Legend } from 'recharts';
 import { TrendingUp, TrendingDown, Minus, ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Analytics } from '@vercel/analytics/react';
 import Hero from './components/Hero';
 
 const data = rawData;
@@ -528,6 +529,7 @@ function App() {
           </div>
         </footer>
       </div>
+      <Analytics />
     </div>
   );
 }
